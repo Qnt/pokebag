@@ -8,7 +8,7 @@ export default async function Home() {
   const pokemon = await getRandomPokemon();
 
   return (
-    <main className="grid grid-cols-2">
+    <main className="m-auto grid max-w-5xl grid-cols-1 items-start gap-8 p-10 md:grid-cols-2">
       <div className="flex flex-col items-center gap-2">
         <Pokecard pokemon={pokemon} />
         <ButtonAction pokemon={pokemon} />
